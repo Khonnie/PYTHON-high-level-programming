@@ -6,15 +6,16 @@ def get_numbers():
 	numbers = {'computer': computer_number , 'player': player_guess}
 	return(numbers)
 def check_numbers(computer_number, player_guess):
+	if player_guess == computer_number:
+		print ('You guessed correctly')
 	guess_count = 0
-	while player_guess == computer_number:
-		print('you guessed right')
-		guess_count += 1
+	while player_guess != computer_number:
 		if player_guess > computer_number:
-			print('Number too High')
+			print('Number Too high')
 			player_guess = int(input('please try again:'))
 		else:
 			print('Number to low')
 			player_guess = int(input('please try again:'))
-			Break
+			guess_count += 1
+			break
 
