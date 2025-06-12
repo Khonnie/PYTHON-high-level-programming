@@ -1,0 +1,14 @@
+#Quiz Game
+Questions = [
+    {'Question' : 'Whats the capital city of Uganda?', 'Answer' : 'Kampala' },
+    {'Question' : 'Who is the president of Uganda?', 'Answer' : 'Museveni'},
+    {'Question' : 'Whats the first book in the Bible?', 'Answer' : 'Genesis'},
+    {'Question' : 'Who was Abrahams Son?', 'Answer' : 'Isaac'}
+]
+for q in Questions:
+    print(q['Question'])
+    User_answer = input('Type Your Answer:').strip().lower()
+    if User_answer == q['Answer'].strip().lower():
+        print('correct Answer')
+    else:
+        print(f'The correct answer is {q['Answer']}')
