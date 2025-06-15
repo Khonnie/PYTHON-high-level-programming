@@ -1,0 +1,10 @@
+#Duplicate Finder
+Names = ['Connie', 'John', 'Norah', 'Kezia', 'Connie', 'Kezia']
+seen = set()
+duplicate = set()
+for name in Names:#for i in range(len(Names)) name = Names[i]
+    if name in seen:
+        duplicate.add(name)
+    else:
+        seen.add(name)
+print('the Duplicates are:', duplicate)

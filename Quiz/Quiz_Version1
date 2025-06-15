@@ -7,6 +7,7 @@ def quiz():
     {'Question' : 'Who was Abrahams Son?', 'Answer' : 'Isaac'}
     ]
     for q in Questions:
+        #print(q['Question'], ''.stip().lower())
         print(q['Question'])
         User_answer = input('Type Your Answer:').strip().lower()
         if User_answer == q['Answer'].strip().lower():
